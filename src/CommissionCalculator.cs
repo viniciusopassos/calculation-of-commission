@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace CommissionCalculator
+namespace CommissionCalculation
 {
     public class CommissionCalculator
     {
@@ -13,7 +13,7 @@ namespace CommissionCalculator
         public decimal TotalSalesValue { get; set; }
         public decimal FinalSalary { get; set; }
 
-        public void CalculateFinalSalary(decimal fixedSalary, int amountCarsSold, decimal totalSalesValue)
+        public decimal CalculateFinalSalary(decimal fixedSalary, int amountCarsSold, decimal totalSalesValue)
         {
             FixedSalary = fixedSalary;
             AmountCarsSold = amountCarsSold;
@@ -22,6 +22,8 @@ namespace CommissionCalculator
             decimal fixedCommission = CommissionPerCarSold * amountCarsSold;
             decimal commissionPerSale = totalSalesValue * 0.03M;
             FinalSalary = fixedSalary + fixedCommission + commissionPerSale;
+
+            return FinalSalary;
         }
     }
 }
