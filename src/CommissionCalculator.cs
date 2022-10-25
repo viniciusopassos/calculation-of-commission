@@ -15,17 +15,15 @@ namespace CommissionCalculation
         public decimal FixedCommission { get; set; }
         public decimal CommissionPerSale { get; set; }
 
-        public decimal CalculateFinalSalary(decimal fixedSalary, int amountCarsSold, decimal totalSalesValue)
+        public void CalculateFinalSalary(decimal fixedSalary, int amountCarsSold, decimal totalSalesValue)
         {
             FixedSalary = fixedSalary;
             AmountCarsSold = amountCarsSold;
             TotalSalesValue = totalSalesValue;
 
-            decimal fixedCommission = CommissionPerCarSold * amountCarsSold;
-            decimal commissionPerSale = totalSalesValue * 0.03M;
-            FinalSalary = fixedSalary + fixedCommission + commissionPerSale;
-
-            return FinalSalary;
+            FixedCommission = CommissionPerCarSold * amountCarsSold;
+            CommissionPerSale = totalSalesValue * 0.03M;
+            FinalSalary = fixedSalary + FixedCommission + CommissionPerSale;
         }
 
         public string[] ShowFinalSalary(string contributorName, string month)
