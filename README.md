@@ -4,7 +4,7 @@
 Sistema desenvolvido para uma revenda de automóveis que ajuda a calcular o valor a ser pago aos seus colaboradores ao final de cada mês. 
 
 <h3>Desafios</h3>
-O programa deve auxiliar e apresentar o valor total a ser pago ao colaborador, fazendo a operação matemáticas com as seguintes variáveis abaixo:
+O programa deve auxiliar e apresentar o valor total a ser pago ao colaborador, fazendo as operaç matemáticas com as seguintes variáveis abaixo:
 
 <ul>
   <li>Salário fixo no mês.</li>
