@@ -29,12 +29,12 @@ namespace CommissionCalculation
         public string[] ShowFinalSalary(string contributorName, string month)
         {
             return new string[]
-            {" O colaborador " + contributorName + " neste mês de " + month + " obteve o salário final de R$ " + FinalSalary + " referente à: ", 
-            " SALÁRIO FIXO: R$ " + FixedSalary,
-            " TOTAL DE CARROS VENDIDOS: " + AmountCarsSold,
-            " VALOR TOTAL DE VENDAS NO MÊS: R$ " + TotalSalesValue,
-            " COMISSÃO POR CARROS VENDIDOS: R$ " + FixedCommission,
-            " COMISSÃO DE 3% DO TOTAL DE VENDAS: R$ " + CommissionPerSale,
+            {$" O colaborador {contributorName} neste mês de {month} obteve o salário final de R$ {FinalSalary.ToString("N2")} referente à: ", 
+            $" SALÁRIO FIXO: R$ {FixedSalary.ToString("N2")}",
+            $" TOTAL DE CARROS VENDIDOS: {AmountCarsSold}",
+            $" VALOR TOTAL DE VENDAS NO MÊS: R$ {TotalSalesValue.ToString("N2")}",
+            $" COMISSÃO POR CARROS VENDIDOS: R$ {FixedCommission.ToString("N2")}",
+            $" COMISSÃO DE 3% DO TOTAL DE VENDAS: R$ {CommissionPerSale}",
             }; 
         }
     }

@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{ACCCEE8D-97B0-4F3A-BF3A-34D732E031DA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommissionCalculation", "CommissionCalculation\CommissionCalculation.csproj", "{DD2A6666-E1BD-4429-A20B-972051372C62}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommissionCalculation.Test", "CommissionCalculation.Test\CommissionCalculation.Test.csproj", "{1842D867-237D-4461-82BF-988CA871D9D1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DD2A6666-E1BD-4429-A20B-972051372C62}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD2A6666-E1BD-4429-A20B-972051372C62}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD2A6666-E1BD-4429-A20B-972051372C62}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD2A6666-E1BD-4429-A20B-972051372C62}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1842D867-237D-4461-82BF-988CA871D9D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1842D867-237D-4461-82BF-988CA871D9D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1842D867-237D-4461-82BF-988CA871D9D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1842D867-237D-4461-82BF-988CA871D9D1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{DD2A6666-E1BD-4429-A20B-972051372C62} = {ACCCEE8D-97B0-4F3A-BF3A-34D732E031DA}
+		{1842D867-237D-4461-82BF-988CA871D9D1} = {ACCCEE8D-97B0-4F3A-BF3A-34D732E031DA}
+	EndGlobalSection
+EndGlobal
