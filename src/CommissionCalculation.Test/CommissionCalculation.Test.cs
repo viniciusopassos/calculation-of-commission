@@ -29,6 +29,6 @@ public class CommissionCalculationTest
         var instance = new CommissionCalculator();
 
         var result = instance.ShowFinalSalary(contributorName, month);
-        Assert.Contains(result, x => x.Equal(expectedMessage[0]));
+        Assert.Contains(result, x => x.Equals(expectedMessage[0]));
     }
 }
