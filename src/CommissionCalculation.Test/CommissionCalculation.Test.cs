@@ -15,4 +15,11 @@ public class CommissionCalculationTest
         instance.CalculateFinalSalary(fixedSalary, amountCarsSold, totalSalesValue);
         instance.FinalSalary.Should().Be(expectedFinalSalary);
     }
+
+    [Theory(DisplayName = "Deve exibir corretamente a mensagem de salário final.")]
+    [InlineData()]
+    public void TestShowFinalSalary(string contributorName, string month, string[] expectedMessage)
+    {
+        
+    }
 }
